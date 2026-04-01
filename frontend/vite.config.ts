@@ -14,7 +14,7 @@ export default defineConfig({
         port: 5173,
         proxy: {
             '/api': {
-                target: 'http://backend:3001',
+                target: 'http://qlts.monitormb.xyz:3001',
                 changeOrigin: true,
             },
         },
