@@ -12,9 +12,10 @@ export default defineConfig({
     server: {
         host: '0.0.0.0',
         port: 5173,
+        allowedHosts: ['qlts.monitormb.xyz'],
         proxy: {
             '/api': {
-                target: 'http://qlts.monitormb.xyz:3001',
+                target: 'http://backend:3001',
                 changeOrigin: true,
             },
         },
